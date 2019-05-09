@@ -1,0 +1,21 @@
+version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+options: "5e42f363e6fc618b6abc1ae0940c37a1"
+build_time: [1557440229, 104564000]
+inputs:
+  "/Users/connorwoodford/Desktop/Swift Stuff/video streamer/video streamer/TV Stuff/TVStuffViewController.swift": [1557440185, 407763362]
+  "/Users/connorwoodford/Desktop/Swift Stuff/video streamer/video streamer/HomePageStuff/HomePage.swift": [1549432605, 229564199]
+  "/Users/connorwoodford/Desktop/Swift Stuff/video streamer/video streamer/TV Stuff/TVTable.swift": [1540968700, 760778798]
+  "/Users/connorwoodford/Desktop/Swift Stuff/video streamer/video streamer/TV Stuff/TVShowVC.swift": [1549432920, 384019994]
+  "/Users/connorwoodford/Desktop/Swift Stuff/video streamer/video streamer/TV Stuff/SearchTVCell.swift": [1545428295, 174485236]
+  "/Users/connorwoodford/Desktop/Swift Stuff/video streamer/video streamer/Core Data/PersistanceService.swift": [1557343036, 496454148]
+  "/Users/connorwoodford/Desktop/Swift Stuff/video streamer/video streamer/HomePageStuff/HomePageCVCellCollectionViewCell.swift": [1549430674, 658268682]
+  "/Users/connorwoodford/Desktop/Swift Stuff/video streamer/video streamer/TV Stuff/SecondCell.swift": [1540968701, 536565399]
+  "/Users/connorwoodford/Desktop/Swift Stuff/video streamer/video streamer/Home Videos VC/WoodforHV.swift": [1546397629, 844536228]
+  "/Users/connorwoodford/Desktop/Swift Stuff/video streamer/video streamer/Core Data/FordFlix.swift": [1549430411, 899601596]
+  "/Users/connorwoodford/Desktop/Swift Stuff/video streamer/video streamer/Core Data/Person+CoreDataClass.swift": [1527827666, 679491146]
+  "/Users/connorwoodford/Desktop/Swift Stuff/video streamer/video streamer/Home Videos VC/TableViewCell.swift": [1545372972, 245835021]
+  "/Users/connorwoodford/Desktop/Swift Stuff/video streamer/video streamer/Core Data/AppDelegate.swift": [1549425219, 251541262]
+  "/Users/connorwoodford/Desktop/Swift Stuff/video streamer/video streamer/TV Stuff/TVCell.swift": [1540968702, 263540621]
+  "/Users/connorwoodford/Desktop/Swift Stuff/video streamer/video streamer/HomePageStuff/changeImg.swift": [1549430627, 696496447]
+  "/Users/connorwoodford/Desktop/Swift Stuff/video streamer/video streamer/HomePageStuff/SearchTableViewController.swift": [1549160727, 524313209]
+  "/Users/connorwoodford/Desktop/Swift Stuff/video streamer/video streamer/Core Data/Person+CoreDataProperties.swift": [1528239841, 809589858]
