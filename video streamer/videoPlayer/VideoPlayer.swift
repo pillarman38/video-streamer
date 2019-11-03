@@ -1,3 +1,4 @@
+  
 //
 //  VideoPlayer.swift
 //  video streamer
@@ -19,7 +20,8 @@ class VideoPlayer: UIViewController {
     
     @IBOutlet weak var videoView: UIView!
     
-    
+    var player: AVPlayer!
+    var playerLayer: AVPlayerLayer!
     var obj: Courses!
     
     override func viewDidLoad() {
@@ -54,15 +56,15 @@ class VideoPlayer: UIViewController {
                         if(mydecode.err!["location"] != nil) {
                             print(url!)
                             DispatchQueue.main.async {
-                                var player = AVPlayer(url: url!)
-                                var playerLayer: AVPlayerLayer!
+                                self.player = AVPlayer(url: url!)
                                 
-                                playerLayer = AVPlayerLayer(player: player)
+                                self.playerLayer = AVPlayerLayer(player: self.player)
                                 
-                                playerLayer.videoGravity = .resize
-                                self.videoView.layer.addSublayer(playerLayer)
-                                playerLayer.frame = self.videoView.bounds
-                                player.play()
+                                self.playerLayer.videoGravity = .resize
+                                self.videoView.layer.addSublayer(self.playerLayer)
+                                self.playerLayer.frame = self.videoView.bounds
+                                
+                                self.player.play()
                             }
                         }
                     } catch let jsonErr {
@@ -74,4 +76,11 @@ class VideoPlayer: UIViewController {
 
         }
     }
-}
+    @IBAction func playBtn(_ sender: Any) {
+        if(self.player.rate != 0) {
+        self.player.pause()
+    } else {
+        self.player.play()
+        }
+    }
+  }

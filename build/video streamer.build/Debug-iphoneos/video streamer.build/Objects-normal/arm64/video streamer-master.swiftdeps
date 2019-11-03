@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
 options: "75d1c24d0fe26393312dd1a47821fbc4"
-build_time: [1572678632, 458686000]
+build_time: [1572816808, 129425000]
 inputs:
   "/Users/connorwoodford/Desktop/Swift Stuff/video streamer/video streamer/TV Stuff/TVStuffViewController.swift": [1572484813, 675614228]
   "/Users/connorwoodford/Desktop/Swift Stuff/video streamer/video streamer/HomePageStuff/HomePage.swift": [1572480729, 505943307]
@@ -15,9 +15,9 @@ inputs:
   "/Users/connorwoodford/Desktop/Swift Stuff/video streamer/video streamer/Core Data/Person+CoreDataClass.swift": [1527827666, 679491146]
   "/Users/connorwoodford/Desktop/Swift Stuff/video streamer/video streamer/Home Videos VC/TableViewCell.swift": [1545372972, 245835021]
   "/Users/connorwoodford/Desktop/Swift Stuff/video streamer/video streamer/Core Data/AppDelegate.swift": [1549425219, 251541262]
-  "/Users/connorwoodford/Desktop/Swift Stuff/video streamer/video streamer/SelectedCell/SelectedCell.swift": [1572575281, 875371268]
+  "/Users/connorwoodford/Desktop/Swift Stuff/video streamer/video streamer/SelectedCell/SelectedCell.swift": [1572796759, 122952965]
   "/Users/connorwoodford/Desktop/Swift Stuff/video streamer/video streamer/TV Stuff/TVCell.swift": [1540968702, 263540621]
-  "/Users/connorwoodford/Desktop/Swift Stuff/video streamer/video streamer/videoPlayer/VideoPlayer.swift": [1572678629, 632222150]
+  "/Users/connorwoodford/Desktop/Swift Stuff/video streamer/video streamer/videoPlayer/VideoPlayer.swift": [1572816805, 958026637]
   "/Users/connorwoodford/Desktop/Swift Stuff/video streamer/video streamer/HomePageStuff/changeImg.swift": [1549430627, 696496447]
   "/Users/connorwoodford/Desktop/Swift Stuff/video streamer/video streamer/HomePageStuff/SearchTableViewController.swift": [1572479993, 504647784]
   "/Users/connorwoodford/Desktop/Swift Stuff/video streamer/video streamer/Core Data/Person+CoreDataProperties.swift": [1528239841, 809589858]
