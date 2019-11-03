@@ -14,6 +14,7 @@
 		2C31AC7A20C849EB00574B53 /* TVTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C31AC7920C849EB00574B53 /* TVTable.swift */; };
 		2C3860FC228338B700C75420 /* video streamer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C3860FB228338B700C75420 /* video streamer.storyboard */; };
 		2C39A9AC20B34DA400E2056A /* HomePageCVCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C39A9AB20B34DA400E2056A /* HomePageCVCellCollectionViewCell.swift */; };
+		2C3D6E18235CBF3500D8AE7A /* SelectedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3D6E17235CBF3500D8AE7A /* SelectedCell.swift */; };
 		2C5742D020AB69960046AAFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5742CF20AB69960046AAFE /* AppDelegate.swift */; };
 		2C5742DA20AB69960046AAFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C5742D920AB69960046AAFE /* Assets.xcassets */; };
 		2C5742DD20AB69960046AAFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C5742DB20AB69960046AAFE /* LaunchScreen.storyboard */; };
@@ -30,6 +31,8 @@
 		2CB1ED3B20BC946B00D7EF5C /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB1ED3920BC946B00D7EF5C /* Person+CoreDataClass.swift */; };
 		2CB1ED3C20BC946B00D7EF5C /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB1ED3A20BC946B00D7EF5C /* Person+CoreDataProperties.swift */; };
 		2CB39C0D20B34AB400D92FEB /* FordFlix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB39C0C20B34AB400D92FEB /* FordFlix.swift */; };
+		2CF8139B236BB08B00EA8157 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8139A236BB08B00EA8157 /* VideoPlayer.swift */; };
+		2CF8139D236D3DA000EA8157 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF8139C236D3DA000EA8157 /* NetworkExtension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,7 @@
 		2C31AC7920C849EB00574B53 /* TVTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVTable.swift; sourceTree = "<group>"; };
 		2C3860FB228338B700C75420 /* video streamer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "video streamer.storyboard"; sourceTree = "<group>"; };
 		2C39A9AB20B34DA400E2056A /* HomePageCVCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCVCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		2C3D6E17235CBF3500D8AE7A /* SelectedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedCell.swift; sourceTree = "<group>"; };
 		2C5742CC20AB69960046AAFE /* video streamer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "video streamer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C5742CF20AB69960046AAFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C5742D920AB69960046AAFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 		2CB1ED3920BC946B00D7EF5C /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
 		2CB1ED3A20BC946B00D7EF5C /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		2CB39C0C20B34AB400D92FEB /* FordFlix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FordFlix.swift; sourceTree = "<group>"; };
+		2CF8139A236BB08B00EA8157 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
+		2CF8139C236D3DA000EA8157 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CA7CA3C21CEAC34008FCBF9 /* ExternalAccessory.framework in Frameworks */,
+				2CF8139D236D3DA000EA8157 /* NetworkExtension.framework in Frameworks */,
 				2CA7CA3A21CEAC20008FCBF9 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,6 +126,14 @@
 			path = "TV Stuff";
 			sourceTree = "<group>";
 		};
+		2C3D6E16235CBA9E00D8AE7A /* SelectedCell */ = {
+			isa = PBXGroup;
+			children = (
+				2C3D6E17235CBF3500D8AE7A /* SelectedCell.swift */,
+			);
+			path = SelectedCell;
+			sourceTree = "<group>";
+		};
 		2C5742C320AB69960046AAFE = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +154,8 @@
 		2C5742CE20AB69960046AAFE /* video streamer */ = {
 			isa = PBXGroup;
 			children = (
+				2CF81399236BB07000EA8157 /* videoPlayer */,
+				2C3D6E16235CBA9E00D8AE7A /* SelectedCell */,
 				2C62D8EF21CD47FC0050B466 /* SearchBar */,
 				2C24974D21994B290054CDAB /* video streamer.entitlements */,
 				2C163DA220C0FFFE003F5A32 /* Core Data */,
@@ -164,10 +181,19 @@
 		2CA7CA3821CEAC20008FCBF9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2CF8139C236D3DA000EA8157 /* NetworkExtension.framework */,
 				2CA7CA3B21CEAC34008FCBF9 /* ExternalAccessory.framework */,
 				2CA7CA3921CEAC20008FCBF9 /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2CF81399236BB07000EA8157 /* videoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				2CF8139A236BB08B00EA8157 /* VideoPlayer.swift */,
+			);
+			path = videoPlayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +299,9 @@
 				2CB1ED3B20BC946B00D7EF5C /* Person+CoreDataClass.swift in Sources */,
 				2C5742E520AB69BE0046AAFE /* TableViewCell.swift in Sources */,
 				2C5742D020AB69960046AAFE /* AppDelegate.swift in Sources */,
+				2C3D6E18235CBF3500D8AE7A /* SelectedCell.swift in Sources */,
 				2C31AC7220C7A68900574B53 /* TVCell.swift in Sources */,
+				2CF8139B236BB08B00EA8157 /* VideoPlayer.swift in Sources */,
 				2C88ED7620C347EA00411101 /* changeImg.swift in Sources */,
 				2C62D8F121CD482D0050B466 /* SearchTableViewController.swift in Sources */,
 				2CB1ED3C20BC946B00D7EF5C /* Person+CoreDataProperties.swift in Sources */,

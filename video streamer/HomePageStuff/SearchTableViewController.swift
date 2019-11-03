@@ -101,22 +101,22 @@ class SearchTableViewController: UIViewController, UITableViewDataSource, UITabl
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let selectedCell = flix[indexPath.row].location
-        
-        let url = selectedCell
-        
-        // Create an AVPlayer, passing it the HTTP Live Streaming URL.
-        let player = AVPlayer(url: URL(string: url)!)
-        
-        // Create a new AVPlayerViewController and pass it a reference to the player.
-        let controller = AVPlayerViewController()
-        controller.player = player
-        
-        // Modally present the player and call the player's play() method when complete.
-        present(controller, animated: true) {
-            player.play()
-            
-        }
+//        let selectedCell = flix[indexPath.row].location
+//        
+//        let url = selectedCell
+//        
+//        // Create an AVPlayer, passing it the HTTP Live Streaming URL.
+//        let player = AVPlayer(url: URL(string: url)!)
+//        
+//        // Create a new AVPlayerViewController and pass it a reference to the player.
+//        let controller = AVPlayerViewController()
+//        controller.player = player
+//        
+//        // Modally present the player and call the player's play() method when complete.
+//        present(controller, animated: true) {
+//            player.play()
+//            
+//        }
     }
 }
 

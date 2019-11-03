@@ -48,7 +48,7 @@ class TVStuffViewController: UIViewController, UICollectionViewDataSource, UICol
         var indexPath = collections.indexPathsForSelectedItems?.first
             if segue.identifier == "selectedShow" {
                 let vc = segue.destination as! TVShowVC
-                vc.urlString = flix[(indexPath?.row)!].location
+                vc.urlString = flix[(indexPath?.row)!].location!
             }
         }
 
@@ -93,7 +93,7 @@ class TVStuffViewController: UIViewController, UICollectionViewDataSource, UICol
         let sweet = flix[indexPath.row]
         cell.tvLbl.text = sweet.title
         
-        if let profileImageUrl = sweet.image {
+        if let profileImageUrl = sweet.poster_path {
             let url = URL(string: profileImageUrl)
             URLSession.shared.dataTask(with: url!, completionHandler: { (data, response, error) in
                 if error != nil {
@@ -108,18 +108,18 @@ class TVStuffViewController: UIViewController, UICollectionViewDataSource, UICol
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let selectedCell = flix[indexPath.row]
-        
-        let url = selectedCell.location
-      
-        // Create an AVPlayer, passing it the HTTP Live Streaming URL.
-    
-        let anotherVC = TVShowVC()
-        // Create a new AVPlayerViewController and pass it a reference to the player.
-   
-        performSegue(withIdentifier: "selectedShow", sender: self)
-        
-        // Modally present the player and call the player's play() method when complete.
+//        let selectedCell = flix[indexPath.row]
+//        
+//        let url = selectedCell.location
+//      
+//        // Create an AVPlayer, passing it the HTTP Live Streaming URL.
+//    
+//        let anotherVC = TVShowVC()
+//        // Create a new AVPlayerViewController and pass it a reference to the player.
+//   
+//        performSegue(withIdentifier: "selectedShow", sender: self)
+//        
+//        // Modally present the player and call the player's play() method when complete.
         
     }
 }

@@ -14,7 +14,7 @@ class HomePage: UIViewController, UICollectionViewDataSource, UICollectionViewDe
     
     @IBOutlet weak var collection: UICollectionView!
     
-    var urlString = "http://192.168.1.7:4012/api/photos/getPhoto"
+    var urlString = "http://192.168.1.19:4012/api/mov/movies"
     
     var flix = [Courses]()
     
@@ -46,18 +46,16 @@ class HomePage: UIViewController, UICollectionViewDataSource, UICollectionViewDe
                     return
                 } else {
                     print("Loaded URL")
-                    print(url)
-                    
+                   
                 }
                 
                 guard let data = data else { return }
-                
                 
                 do {
                     let decoder = JSONDecoder()
                     self.flix = try decoder.decode([Courses].self, from: data)
                     self.collection.reloadData()
-                    print(self.flix)
+                  
                 } catch let jsonErr {
                     print("Failed to decode JSON", jsonErr)
                 }
@@ -80,7 +78,7 @@ class HomePage: UIViewController, UICollectionViewDataSource, UICollectionViewDe
         let sweet = flix[indexPath.row]
         cell.titleLbl.text = sweet.title
         
-        if let profileImageUrl = sweet.image {
+        if let profileImageUrl = sweet.photoUrl {
             let url = URL(string: profileImageUrl)
             URLSession.shared.dataTask(with: url!, completionHandler: { (data, response, error) in
                 if error != nil {
@@ -96,23 +94,35 @@ class HomePage: UIViewController, UICollectionViewDataSource, UICollectionViewDe
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+  
         let selectedCell = flix[indexPath.row].location
         
         let url = selectedCell
-        print(selectedCell)
+    
+        
+        let storyboard = UIStoryboard(name: "video streamer", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "SelectedCell") as? SelectedCell
+        
+        controller?.obj = flix[indexPath.row]
+       
+        
+        self.present(controller!, animated: true, completion: nil)
+        
+        
+        
         
         // Create an AVPlayer, passing it the HTTP Live Streaming URL.
-        let player = AVPlayer(url: URL(string: url)!)
-        
-        
-        // Create a new AVPlayerViewController and pass it a reference to the player.
-        let controller = AVPlayerViewController()
-        controller.player = player
-        
-        // Modally present the player and call the player's play() method when complete.
-        present(controller, animated: true) {
-            player.play()
-        }
+//        let player = AVPlayer(url: URL(string: url)!)
+//
+//
+//        // Create a new AVPlayerViewController and pass it a reference to the player.
+//        let controller = AVPlayerViewController()
+//        controller.player = player
+//
+//        // Modally present the player and call the player's play() method when complete.
+//        present(controller, animated: true) {
+//            player.play()
+//        }
     }
 }
 
